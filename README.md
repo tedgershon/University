@@ -16,7 +16,7 @@ Having cloned this repo to your laptop (recommended) or gotten the zip file from
 3. Open up `app/models/department.rb` and review the code
 4. Open up `app/models/faculty.rb` and review the code comments given
 5. Open up `test/models/faculty_test.rb` and complete the tests so the methods commented on will be covered properly and completely
-	- this will require you to set up a context for faculty (skelton already in place). Looking at the factory file for faculty, you see that Prof. Q is the default faculty member; probably a good idea to create the first faculty object as `@profq`.  Of course, also make sure that not every faculty you create is named 'Jeria Quesenberry' ;-)
+	- to speed things up, we have provided a context for both departments and faculties for you.
 	- before testing, load the testing data into a clean copy of your dev database with the command `rails db:contexts`. (_Note that this is not built into Rails; it was written for you and also exists in your project starter code._) Once that's done and the contexts build without error, re-open rails console and run `Department.all` and `Faculty.all` and see that the testing context data is loaded in the dev environment.
 
 6. Run the tests and see that tests for department passes while tests for faculty fail.
